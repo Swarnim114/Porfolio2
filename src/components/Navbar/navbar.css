@@ -1,0 +1,24 @@
+.navbar{
+    background-color: #fcd5d5;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar h1{
+    margin-left: 10px;
+    color: black;
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight:900;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    color: black;
+}
