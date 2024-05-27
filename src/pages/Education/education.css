@@ -1,0 +1,81 @@
+.education {
+    
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .programming {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 400px;
+  }
+  
+  .programmingImg {
+    width: 750px; /* Adjust the width as needed */
+    height: auto;
+  }
+  
+  .programmingLinks {
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .programmingLinks p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the icons circular */
+    color: #333; /* Adjust the color as needed */
+    background-color: #f0f0f0; /* Background color for the icons */
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.3);
+    background-color: #ddd; /* Darker background on hover */
+  }
+  
+  .social-media a svg {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .programming {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .programmingImg {
+      margin-bottom: 10px;
+    }
+    
+    .programmingLinks {
+      margin-left: 0;
+    }
+    
+    .social-media {
+      justify-content: center;
+    }
+  }
+  

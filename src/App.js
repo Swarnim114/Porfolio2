@@ -2,11 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/navbar';
-
-const Home = () => <div>Home Page</div>;
-const Education = () => <div>Education Page</div>;
-const Projects = () => <div>Projects Page</div>;
-const Skills = () => <div>Skills Page</div>;
+import Home from './pages/Home/home';
+import Education from './pages/Education/education';
+import Projects from './pages/Projects/project';
+import Skills from './pages/Skills/skills';
 
 function App() {
   return (

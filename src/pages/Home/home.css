@@ -1,0 +1,67 @@
+.home {
+    text-align: center;
+    /* padding: 20px; */
+  }
+  
+  .introduction {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .hello {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  
+  .hello-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-stretch: expanded;
+    margin: 0; /* Remove default margins */
+  }
+  
+  .hello-big {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .boyLaptop {
+    width: 700px;
+    height: auto;
+    margin-right: 60px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 0; /* Adjust margin-left if needed */
+    
+  }
+  
+  
+  .social-media a {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 60px;
+    height: 60px;
+    color: inherit;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20%;
+    background-color: aliceblue;
+  }
+  
+  
+  .social-media a:hover {
+    transform: scale(1.4);
+  }
+  
