@@ -16,8 +16,8 @@
     color: black;
     font-size: 4.5rem;
     font-family: "Allura", cursive;
-  font-weight: 400;
-  font-style: normal;
+   font-weight: 400;
+   font-style: normal;
     font-weight: 900;
 }
 
@@ -35,14 +35,25 @@
 }
 
 .navbar-menu a {
-    text-decoration: none; 
-    color: rgb(96, 92, 92); 
-    font-size: 1.7rem; 
-    font-style: bold; 
-    font-family: Arial, sans-serif;
-    font-weight: 900;
-}
-
-.navbar-menu a:hover {
-    text-decoration: underline; /* Optionally, add underline on hover */
-}
+    position: relative;
+    text-decoration: none;
+    
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(125, 121, 121);
+  }
+  
+  .navbar-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px; /* Adjust the height of the underline */
+    bottom: -2px; /* Position the underline slightly below the text */
+    left: 0;
+    background-color:rgb(125, 121, 121);
+    transition: width 0.3s ease-in-out; /* Duration of the underline effect */
+  }
+  
+  .navbar-menu a:hover::after {
+    width: 100%;
+  }
