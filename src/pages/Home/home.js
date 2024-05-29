@@ -1,11 +1,14 @@
+// Home.js
 import React, { useEffect } from 'react';
 import './home.css';
 import boyLaptop from '../../assets/boyLaptop.gif';
 import dsImage from '../../assets/dsa.svg';
 import webDevImage from '../../assets/webdev.svg';
+import backendImage from '../../assets/backend.svg';
 import VanillaTilt from 'vanilla-tilt';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { RiCodeSSlashLine } from 'react-icons/ri';
+import Typewriter from '../../components/Typewriter/typewriter';
 
 const Home = () => {
   useEffect(() => {
@@ -23,7 +26,9 @@ const Home = () => {
       <div className='introduction'>
         <div className='hello'>
           <h1 className='hello-text'>
-            <p className='hello-big'>Hello All! I'm Swarnim</p><br />
+            <p className='hello-big'>
+              <Typewriter text="Hello All! I'm Swarnim" speed={50} />
+            </p><br />
             I'm a CS student at Scaler School of Technology in Bangalore.<br />
             Passionate about coding and problem-solving,<br />
             I aim to develop innovative tech solutions.<br />
@@ -66,7 +71,8 @@ const Home = () => {
                 💥 As I know Data Structures and Algorithms <br />
                 are the heart of programming, so I love <br />
                 to solve programming questions in different <br />
-                competitive websites like Codeforces, Codechef, and many more.
+                competitive websites like Codeforces,  <br />
+                Codechef, and many more.
               </li>
             </ul>
           </div>
@@ -92,6 +98,29 @@ const Home = () => {
           </div>
           <div className='webdev-image'>
             <img className='tilt' src={webDevImage} alt="Web Development" />
+          </div>
+        </div>
+        <div className='backend'>
+          <div className='backend-image'>
+            <img className='tilt' src={backendImage} alt="Backend Development" />
+          </div>
+          <div className='backend-text'>
+            <h2>Backend Development</h2>
+            <ul>
+              <li>
+                💥 I have experience with server-side programming <br />
+                using SpringBoot and databases like <br />
+                MongoDB and MariaDB. 
+              </li>
+              <li>
+                💥 I build robust APIs and handle server-side logic, <br />
+                ensuring efficient data management and processing.
+              </li>
+              <li>
+                💥 Passionate about creating scalable backend solutions <br />
+                to support dynamic web applications.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

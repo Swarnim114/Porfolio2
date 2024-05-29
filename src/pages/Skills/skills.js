@@ -7,7 +7,7 @@ import { SiSpringboot } from 'react-icons/si'; // Import Spring Boot icon
 const Skills = () => {
   useEffect(() => {
     const fills = document.querySelectorAll('.fill');
-    const widths = ['90%', '70%', '95%', '90%', '80%', '75%', '70%', '80%', '65%'];
+    const widths = ['90%', '95%', '70%', '90%', '80%', '75%', '70%', '80%', '65%'];
 
     fills.forEach((fill, index) => {
       setTimeout(() => {

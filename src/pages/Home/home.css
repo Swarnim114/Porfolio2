@@ -53,7 +53,6 @@ body {
   margin-top: 20px;
   width: 30%;
   margin-left: 0; /* Adjust margin-left if needed */
-  
 }
 
 .social-media a {
@@ -87,7 +86,7 @@ body {
   font-size: 3rem;
 }
 
-.DSA, .webdev {
+.DSA, .webdev, .backend {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,7 +96,7 @@ body {
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-.DSA-image, .webdev-image {
+.DSA-image, .webdev-image, .backend-image {
   flex: 1;
   padding-right: 20px;
   margin-left: 100px;
@@ -105,7 +104,7 @@ body {
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-.DSA-image img {
+.DSA-image img, .webdev-image img, .backend-image img {
   width: 120%;
   height: auto;
 }
@@ -118,31 +117,33 @@ body {
   max-width: 100%;
 }
 
-.DSA-text, .webdev-text {
+.DSA-text, .webdev-text, .backend-text {
   flex: 2;
 }
 
-.webdev-text{
+.webdev-text, .backend-text {
   margin-left: 100px;
 }
 
-.DSA-text h2, .webdev-text h2 {
+.DSA-text h2, .webdev-text h2, .backend-text h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-.DSA-text ul, .webdev-text ul {
+.DSA-text ul, .webdev-text ul, .backend-text ul {
   list-style: none;
   padding: 0;
 }
 
-.DSA-text li, .webdev-text li {
+.DSA-text li, .webdev-text li, .backend-text li {
   font-size: 1.2em;
   line-height: 1.5;
   margin: 0; /* Remove default margins */
   letter-spacing: 0.1em; /* Increase space between letters */
   word-spacing: 0.2em;
 }
+
+/* Media Queries for Responsiveness
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
