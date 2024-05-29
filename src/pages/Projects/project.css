@@ -1,0 +1,96 @@
+.projects {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Default styles for larger screens */
+.projectImg {
+  margin-left: 100px;
+  max-width: 35%;
+  height: auto;
+  margin-bottom: 20px; /* Adds spacing between image and project list */
+}
+
+.projects-list {
+  margin-left: 300px;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.projects-list-item {
+  width: 100%;
+  background-color: rgba(144, 157, 151, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 30px;
+  border: 3px black solid;
+  border-radius: 20px;
+  transition: all 0.3s ease; 
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-list-item:hover {
+  transform: translateY(-5px); /* Move the item up slightly on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.project-list-item-title {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold; /* Add bold font weight for better emphasis */
+  margin-bottom: 5px; /* Reduce margin for tighter spacing */
+  text-align: center; /* Center text horizontally */
+}
+
+.small-description {
+  font-size: 0.9rem;
+  color: #666; /* Darken the color for better readability */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Responsive styles for medium screens (tablets, small desktops) */
+@media (max-width: 1024px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectImg, .projects-list {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+
+  .projects-list {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive styles for small screens (phones) */
+@media (max-width: 768px) {
+  .projects {
+    padding: 10px;
+  }
+
+  .projectImg, .projects-list {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .projects-list-item {
+    margin: 20px 0;
+  }
+
+  .project-list-item-title {
+    font-size: 1rem;
+  }
+
+  .small-description {
+    font-size: 0.8rem;
+  }
+}

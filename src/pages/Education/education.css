@@ -1,81 +1,110 @@
 .education {
-    
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .programming {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 400px;
-  }
-  
-  .programmingImg {
-    width: 750px; /* Adjust the width as needed */
-    height: auto;
-  }
-  
-  .programmingLinks {
-    margin-left: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .programmingLinks p {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+.programming {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 400px;
+}
+
+/* Adjust the image width to be more flexible */
+.programmingImg {
+  width: 100%;
+  max-width: 750px; /* Maintain the max width */
+  height: auto;
+}
+
+.programmingLinks {
+  margin-left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.programmingLinks p {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the icons circular */
+  color: #333; /* Adjust the color as needed */
+  background-color: #f0f0f0; /* Background color for the icons */
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-media a:hover {
+  transform: scale(1.3);
+  background-color: #ddd; /* Darker background on hover */
+}
+
+.social-media a svg {
+  flex: 1;
+}
+
+/* Responsive styles for tablets and small desktops */
+@media (max-width: 1024px) {
+  .programming {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  
+
+  .programmingImg {
+    width: 80%; /* Adjust width for better fit */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+
+  .programmingLinks p {
+    font-size: 1.5em;
+  }
+}
+
+/* Responsive styles for small screens (phones) */
+@media (max-width: 768px) {
+  .education {
+    padding: 10px;
+  }
+
+  .programming {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .programmingImg {
+    width: 100%; /* Full width for small screens */
+  }
+
+  .programmingLinks p {
+    font-size: 1.2em;
+  }
+
   .social-media {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px; /* Reduce gap */
   }
-  
+
   .social-media a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Makes the icons circular */
-    color: #333; /* Adjust the color as needed */
-    background-color: #f0f0f0; /* Background color for the icons */
-    text-decoration: none;
-    transition: transform 0.3s, background-color 0.3s;
+    width: 40px;
+    height: 40px;
   }
-  
-  .social-media a:hover {
-    transform: scale(1.3);
-    background-color: #ddd; /* Darker background on hover */
-  }
-  
-  .social-media a svg {
-    flex: 1;
-  }
-  
-  @media (max-width: 768px) {
-    .programming {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .programmingImg {
-      margin-bottom: 10px;
-    }
-    
-    .programmingLinks {
-      margin-left: 0;
-    }
-    
-    .social-media {
-      justify-content: center;
-    }
-  }
-  
+}

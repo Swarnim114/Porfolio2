@@ -1,50 +1,106 @@
 .skills-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 60px;
-    padding-right: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+  padding-right: 80px;
+}
+
+/* Adjust the image width to be more flexible */
+.skills-image {
+  max-width: 80%;
+  height: auto;
+  width: 100%; /* Set width to 100% */
+  max-width: 700px; /* Maintain the max width */
+  margin-right: 60px;
+}
+
+.proficiency {
+  width: 100%; /* Set width to 100% */
+  max-width: 700px; /* Maintain the max width */
+  margin-top: 40px;
+  margin-left: 10%;
+}
+
+.proficiency-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icon {
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.bar {
+  flex-grow: 1;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  border-radius: 30%;
+  height: 100%;
+  background-color: #76c7c0;
+  border-radius: 10px 0 0 10px;
+  width: 0;
+  transition: width 2s ease-in-out; /* Smooth transition */
+}
+
+/* Responsive styles for tablets and small desktops */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: column;
+    padding: 40px;
+    padding-right: 40px;
+    text-align: center;
   }
-  
+
   .skills-image {
-    max-width: 80%;
-    height: auto;
-    width: 700px;
-    margin-right: 60px;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-  
+
   .proficiency {
-    width: 80%;
-    margin-top: 40px;
+    width: 90%;
+    margin-top: 20px;
   }
-  
+}
+
+/* Responsive styles for small screens (phones) */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 20px;
+    padding-right: 20px;
+  }
+
+  .skills-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .proficiency {
+    width: 100%;
+    margin-top: 10px;
+  }
+
   .proficiency-bar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .icon {
-    margin-top: 5px;
-    margin-right: 10px;
-    font-size: 28px;
-    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
-  
+
   .bar {
-    flex-grow: 1;
-    height: 40px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 100%;
+    height: 30px;
   }
-  
-  .fill {
-    border-radius: 30%;
-    height: 100%;
-    background-color: #76c7c0;
-    border-radius: 10px 0 0 10px;
-    width: 0;
-    transition: width 2s ease-in-out; /* Smooth transition */
-  }
-  
+}

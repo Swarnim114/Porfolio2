@@ -1,3 +1,9 @@
+/* General Styles */
+body {
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .home {
   text-align: center;
 }
@@ -8,6 +14,8 @@
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .hello {
@@ -15,7 +23,6 @@
   margin-bottom: 10px;
   margin-left: 100px;
   margin-top: 10px;
-  
 }
 
 .hello-text {
@@ -36,6 +43,7 @@
   width: 700px;
   height: auto;
   margin-right: 60px;
+  max-width: 100%;
 }
 
 .social-media {
@@ -44,15 +52,15 @@
   gap: 15px;
   margin-top: 20px;
   width: 30%;
-  /* background-color: antiquewhite; */
   margin-left: 0; /* Adjust margin-left if needed */
+  
 }
 
 .social-media a {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  width: 60px;
+  width: 80px;
   height: 60px;
   color: inherit;
   transition: transform 0.3s;
@@ -62,5 +70,153 @@
 }
 
 .social-media a:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
+}
+
+.whatDoIDo {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.whatDoIDo-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.DSA, .webdev {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 30px;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.DSA-image, .webdev-image {
+  flex: 1;
+  padding-right: 20px;
+  margin-left: 100px;
+  max-width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.DSA-image img {
+  width: 120%;
+  height: auto;
+}
+
+.webdev-image img {
+  width: auto;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 800px;
+  max-width: 100%;
+}
+
+.DSA-text, .webdev-text {
+  flex: 2;
+}
+
+.webdev-text{
+  margin-left: 100px;
+}
+
+.DSA-text h2, .webdev-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.DSA-text ul, .webdev-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.DSA-text li, .webdev-text li {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0; /* Remove default margins */
+  letter-spacing: 0.1em; /* Increase space between letters */
+  word-spacing: 0.2em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .hello {
+    margin-left: 50px;
+  }
+
+  .boyLaptop {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .DSA-image, .webdev-image {
+    margin-left: 50px;
+  }
+
+  .webdev-image img {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction, .DSA, .webdev {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hello {
+    margin-left: 20px;
+  }
+
+  .social-media {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .DSA-image, .webdev-image {
+    margin-left: 0;
+    padding-right: 0;
+    width: 100%;
+    order: 2;
+  }
+
+  .DSA-text, .webdev-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .webdev-image img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .DSA-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello {
+    margin-left: 10px;
+  }
+
+  .whatDoIDo-text {
+    font-size: 2rem;
+  }
+
+  .DSA-text h2, .webdev-text h2 {
+    font-size: 1.5em;
+  }
+
+  .DSA-text li, .webdev-text li {
+    font-size: 1em;
+  }
 }
