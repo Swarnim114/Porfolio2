@@ -40,7 +40,7 @@ const Education = () => {
             <h3>Scaler School of Technology , Bangalore</h3>
             <p>B.Sc in Computer Computer Science</p>
             <p>I have studied software engineering subjects like Data Structures, Algorithms, DBMS, CLI, Web Dev.</p>
-            <button className="degree-button">Website</button>
+            <a className="degree-button" href="https://www.scaler.com/school-of-technology/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
         <div className="degree-item">
@@ -51,19 +51,17 @@ const Education = () => {
             <p>Senior Secondary Education</p>
             <p>Percentage: 81%</p>
             <p>I have studied the subjects Physics, Chemistry, Mathematics etc.</p>
-            <button className="degree-button">Details</button>
+            <a className="degree-button" href="http://www.opsjamui.com/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
-
         <div className="degree-item">
           <div className="degree-icon">🏫</div>
           <div className="degree-content">
-            <span className="degree-duration">till 2020 </span>
+            <span className="degree-duration">till 2020</span>
             <h3>DAV Public School, Jamui</h3>
-            <p> C.B.S.E 10th Board</p>
+            <p>C.B.S.E 10th Board</p>
             <p>Percentage: 94.5%</p>
-            
-            <button className="degree-button">Details</button>
+            <a className="degree-button" href="http://davpsjamui.com/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </div>

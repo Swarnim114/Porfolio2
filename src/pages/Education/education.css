@@ -84,6 +84,7 @@
   border: 3px solid black;
   border-radius: 20px;
   transition: all 0.3s ease;
+  flex-wrap: wrap; /* Allow wrapping of content */
 }
 
 .degree-item:hover {
@@ -98,6 +99,7 @@
 
 .degree-content {
   flex-grow: 1;
+  max-width: calc(100% - 80px); /* Adjust width based on icon size */
 }
 
 .degree-duration {
@@ -115,7 +117,8 @@
 }
 
 .degree-button {
-  margin-top: 10px;
+  display: inline-block;
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #76c7c0;
   border: none;
@@ -123,6 +126,8 @@
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center; /* Center the text */
 }
 
 .degree-button:hover {
@@ -160,6 +165,10 @@
   .degree-icon {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .degree-content {
+    max-width: 100%; /* Full width for small screens */
   }
 }
 

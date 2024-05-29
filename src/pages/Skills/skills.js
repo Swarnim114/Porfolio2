@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import './skills.css';
 import skills from '../../assets/prof.svg';
-import { FaCode, FaPython, FaHtml5, FaCss3Alt, FaJs, FaDatabase } from 'react-icons/fa';
+import { FaPython, FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaTerminal, FaDatabase } from 'react-icons/fa';
+import { SiSpringboot } from 'react-icons/si'; // Import Spring Boot icon
 
 const Skills = () => {
   useEffect(() => {
-    // Set the desired widths for each proficiency bar
     const fills = document.querySelectorAll('.fill');
-    const widths = ['80%', '70%', '90%', '75%', '85%', '60%'];
+    const widths = ['90%', '70%', '95%', '90%', '80%', '75%', '70%', '80%', '65%'];
 
     fills.forEach((fill, index) => {
-      // Set a timeout to allow for rendering
       setTimeout(() => {
         fill.style.width = widths[index];
       }, 100);
@@ -25,42 +24,63 @@ const Skills = () => {
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaCode className='icon' />
+              <FaTerminal className='icon' /> {/* CLI Icon */}
             </div>
           </div>
         </div>
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaPython className='icon' />
+              <FaJava className='icon' /> {/* Java Icon */}
             </div>
           </div>
         </div>
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaHtml5 className='icon' />
+              <FaPython className='icon' /> {/* Python Icon */}
             </div>
           </div>
         </div>
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaCss3Alt className='icon' />
+              <FaHtml5 className='icon' /> {/* HTML Icon */}
             </div>
           </div>
         </div>
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaJs className='icon' />
+              <FaCss3Alt className='icon' /> {/* CSS Icon */}
             </div>
           </div>
         </div>
         <div className='proficiency-bar'>
           <div className='bar'>
             <div className='fill'>
-              <FaDatabase className='icon' />
+              <FaJs className='icon' /> {/* JavaScript Icon */}
+            </div>
+          </div>
+        </div>
+        <div className='proficiency-bar'>
+          <div className='bar'>
+            <div className='fill'>
+              <FaReact className='icon' /> {/* React Icon */}
+            </div>
+          </div>
+        </div>
+        <div className='proficiency-bar'>
+          <div className='bar'>
+            <div className='fill'>
+              <SiSpringboot className='icon' /> {/* Spring Boot Icon */}
+            </div>
+          </div>
+        </div>
+        <div className='proficiency-bar'>
+          <div className='bar'>
+            <div className='fill'>
+              <FaDatabase className='icon' /> {/* MySQL Icon */}
             </div>
           </div>
         </div>

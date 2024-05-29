@@ -24,17 +24,17 @@
 .proficiency-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .icon {
   margin: 5px 10px 0 10px;
-  font-size: 28px;
+  font-size: 23px;
 }
 
 .bar {
   flex-grow: 1;
-  height: 40px;
+  height: 35px;
   background-color: #e0e0e0;
   border-radius: 10px;
   overflow: hidden;

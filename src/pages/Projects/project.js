@@ -35,9 +35,9 @@ const Projects = () => {
 
       <div className='projects-list'>
         <div className='projects-list-item'>
-          <a href="link_to_project_1" >
-            <h3 className='project-list-item-title'>Project 1 title</h3>
-            <p className='small-description'>Description of Project 1</p>
+          <a href="https://swarnim114.github.io/Weather-website/" >
+            <h3 className='project-list-item-title'>Weather Webapp</h3>
+            <p className='small-description'>Tells city weather information</p>
           </a>
         </div>
 
