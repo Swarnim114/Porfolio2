@@ -12,7 +12,6 @@
   margin-right: 400px;
 }
 
-/* Adjust the image width to be more flexible */
 .programmingImg {
   width: 100%;
   max-width: 750px; /* Maintain the max width */
@@ -60,6 +59,76 @@
   flex: 1;
 }
 
+.degrees {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.degrees h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.degree-item {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(144, 157, 151, 0.3);
+  border: 3px solid black;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.degree-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.degree-icon {
+  font-size: 3em;
+  margin-right: 20px;
+}
+
+.degree-content {
+  flex-grow: 1;
+}
+
+.degree-duration {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.degree-content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.degree-content p {
+  margin: 5px 0;
+}
+
+.degree-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #76c7c0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.degree-button:hover {
+  background-color: #5aa39d;
+}
+
 /* Responsive styles for tablets and small desktops */
 @media (max-width: 1024px) {
   .programming {
@@ -76,6 +145,21 @@
 
   .programmingLinks p {
     font-size: 1.5em;
+  }
+
+  .degrees {
+    margin-top: 20px;
+  }
+
+  .degree-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .degree-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -106,5 +190,33 @@
   .social-media a {
     width: 40px;
     height: 40px;
+  }
+
+  .degrees {
+    margin-top: 10px;
+  }
+
+  .degree-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .degree-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .degree-content h3 {
+    font-size: 1.2em;
+  }
+
+  .degree-content p {
+    font-size: 0.9em;
+  }
+
+  .degree-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
   }
 }

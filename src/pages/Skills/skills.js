@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './skills.css';
-import skills from '../../assets/Skills.svg';
+import skills from '../../assets/prof.svg';
 import { FaCode, FaPython, FaHtml5, FaCss3Alt, FaJs, FaDatabase } from 'react-icons/fa';
 
 const Skills = () => {

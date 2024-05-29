@@ -8,18 +8,17 @@
 
 /* Adjust the image width to be more flexible */
 .skills-image {
-  max-width: 80%;
+  width: 100%;
+  max-width: 700px;
   height: auto;
-  width: 100%; /* Set width to 100% */
-  max-width: 700px; /* Maintain the max width */
   margin-right: 60px;
 }
 
 .proficiency {
-  width: 100%; /* Set width to 100% */
-  max-width: 700px; /* Maintain the max width */
+  width: 100%;
+  max-width: 700px;
   margin-top: 40px;
-  margin-left: 10%;
+  margin-left: auto; /* Center align on larger screens */
 }
 
 .proficiency-bar {
@@ -29,10 +28,8 @@
 }
 
 .icon {
-  margin-top: 5px;
-  margin-right: 10px;
+  margin: 5px 10px 0 10px;
   font-size: 28px;
-  margin-left: 10px;
 }
 
 .bar {
@@ -44,9 +41,8 @@
 }
 
 .fill {
-  border-radius: 30%;
   height: 100%;
-  background-color: #76c7c0;
+  background-color: #00BFA6;
   border-radius: 10px 0 0 10px;
   width: 0;
   transition: width 2s ease-in-out; /* Smooth transition */
@@ -69,6 +65,7 @@
   .proficiency {
     width: 90%;
     margin-top: 20px;
+    margin-left: 0; /* Reset margin for smaller screens */
   }
 }
 
@@ -87,6 +84,7 @@
   .proficiency {
     width: 100%;
     margin-top: 10px;
+    margin-left: 0; /* Reset margin for smaller screens */
   }
 
   .proficiency-bar {
@@ -95,12 +93,11 @@
   }
 
   .icon {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0; /* Adjust margins for smaller screens */
   }
 
   .bar {
     width: 100%;
-    height: 30px;
+    height: 30px; /* Adjust height for smaller screens */
   }
 }

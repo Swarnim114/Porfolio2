@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import './home.css';
-import boyLaptop from '../../assets/boyLaptop.gif'; // Correct relative path
-import dsImage from '../../assets/dsa.svg'; // Assuming the new image is saved as dsa_image.png
-import webDevImage from '../../assets/webdev.svg'; // Assuming the new image is saved as webdev.svg
+import boyLaptop from '../../assets/boyLaptop.gif';
+import dsImage from '../../assets/dsa.svg';
+import webDevImage from '../../assets/webdev.svg';
 import VanillaTilt from 'vanilla-tilt';
-// Import Font Awesome icons
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { RiCodeSSlashLine } from 'react-icons/ri'; // Example placeholder for LeetCode, replace with appropriate icon
+import { RiCodeSSlashLine } from 'react-icons/ri';
 
 const Home = () => {
   useEffect(() => {
-    VanillaTilt.init(document.querySelectorAll(".boyLaptop"), {
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
       max: 4,
       speed: 800,
       scale: 1.02,
@@ -41,18 +40,18 @@ const Home = () => {
               <FaGithub size={40} />
             </a>
             <a href="https://leetcode.com/u/Swarnim11/" target="_blank" rel="noopener noreferrer">
-              <RiCodeSSlashLine size={40} /> {/* Replace with appropriate LeetCode icon */}
+              <RiCodeSSlashLine size={40} />
             </a>
           </div>
         </div>
-        <img className='boyLaptop' src={boyLaptop} alt='Boy with Laptop' />
+        <img className='boyLaptop tilt' src={boyLaptop} alt='Boy with Laptop' />
       </div>
 
       <div className='whatDoIDo'>
         <h2 className='whatDoIDo-text'>What Do I Do?</h2>
         <div className='DSA'>
           <div className='DSA-image'>
-            <img src={dsImage} alt="Data Structures and Algorithms" />
+            <img className='tilt' src={dsImage} alt="Data Structures and Algorithms" />
           </div>
           <div className='DSA-text'>
             <h2>Data Structures and Algorithms</h2>
@@ -92,7 +91,7 @@ const Home = () => {
             </ul>
           </div>
           <div className='webdev-image'>
-            <img src={webDevImage} alt="Web Development" />
+            <img className='tilt' src={webDevImage} alt="Web Development" />
           </div>
         </div>
       </div>
