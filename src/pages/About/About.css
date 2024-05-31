@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+  
+.home {
+    text-align: center;
+}
+  
+.whatDoIDo {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 100px;
+    color: rgb(125, 121, 121);
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+  
+.whatDoIDo-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: rgb(125, 121, 121);
+}
+  
+.DSA, .webdev, .backend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+  
+.DSA-image, .webdev-image, .backend-image {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 100px;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+  
+.DSA-image img, .webdev-image img, .backend-image img {
+    width: 140%; /* Increase image size */
+    height: auto;
+}
+  
+.webdev-image img {
+    width: auto;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 800px;
+    max-width: 100%;
+}
+
+.DSA-image {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 900px;
+}
+
+.backend-image {
+    width: 120%;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+
+.backend-image img {
+    width: 130%;
+    height: auto;
+}
+  
+.DSA-text, .webdev-text, .backend-text {
+    flex: 2;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+  
+.webdev-text, .backend-text {
+    margin-left: 100px;
+}
+
+.DSA-text {
+    margin-left: 400px;
+}
+
+.backend-text {
+    margin-left: 100px;
+}
+  
+.DSA-text h2, .webdev-text h2, .backend-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+  
+.DSA-text ul, .webdev-text ul, .backend-text ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.DSA-text li, .webdev-text li, .backend-text li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0; /* Remove default margins */
+    letter-spacing: 0.1em; /* Increase space between letters */
+    word-spacing: 0.2em;
+}
+  
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .DSA-image, .webdev-image, .backend-image {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+  
+    .webdev-image img {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .DSA, .webdev, .backend {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .DSA-image, .webdev-image, .backend-image {
+        width: 100%; /* Ensure images take full width */
+        margin: 0;
+    }
+
+    .DSA-text, .webdev-text, .backend-text {
+        margin-left: 0;
+        text-align: center; /* Center text for smaller screens */
+        width: 100%;
+    }
+
+    .DSA-image img, .webdev-image img, .backend-image img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatDoIDo-text {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .DSA-text h2, .webdev-text h2, .backend-text h2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    .DSA-text li, .webdev-text li, .backend-text li {
+        font-size: 1em; /* Adjust list item font size for smaller screens */
+    }
+}
