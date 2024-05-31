@@ -71,8 +71,8 @@ const Home = () => {
                 💥 As I know Data Structures and Algorithms <br />
                 are the heart of programming, so I love <br />
                 to solve programming questions in different <br />
-                competitive websites like Codeforces,  <br />
-                Codechef, and many more.
+                competitive websites like Leetcode,  <br />
+                GFG, and many more.
               </li>
             </ul>
           </div>
@@ -110,7 +110,7 @@ const Home = () => {
               <li>
                 💥 I have experience with server-side programming <br />
                 using SpringBoot and databases like <br />
-                MongoDB and MariaDB. 
+                MongoDB and MySQL. 
               </li>
               <li>
                 💥 I build robust APIs and handle server-side logic, <br />
