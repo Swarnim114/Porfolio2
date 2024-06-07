@@ -1,4 +1,3 @@
-// src/components/Home/Home.js
 import React, { useEffect } from 'react';
 import './home.css';
 import boyLaptop from '../../assets/boyLaptop.gif';
@@ -46,7 +45,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <img className='boyLaptop tilt' src={boyLaptop} alt='Boy with Laptop' />
+        <div className='boyLaptop-container'>
+          <img className='boyLaptop tilt' src={boyLaptop} alt='Boy with Laptop' />
+        </div>
       </div>
     </div>
   );

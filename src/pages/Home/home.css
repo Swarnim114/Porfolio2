@@ -1,69 +1,76 @@
-/* General Styles */
 body {
-  margin: 0; /* Remove default margin */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .home {
   text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .introduction {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .hello {
   text-align: left;
-  margin-bottom: 10px;
-  margin-left: 100px;
-  margin-top: 10px;
+  margin: 1rem;
+  flex: 1;
 }
 
 .hello-text {
   font-size: 1.2em;
   line-height: 1.5;
-  margin: 0; /* Remove default margins */
-  letter-spacing: 0.1em; /* Increase space between letters */
-  word-spacing: 0.2em; /* Increase space between words */
+  margin: 0;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
 }
 
 .hello-big {
   font-size: 2em;
   font-weight: bold;
-  margin-bottom: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.boyLaptop-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px; /* Minimum size */
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem;
 }
 
 .boyLaptop {
-  width: 700px;
+  width: 100%;
   height: auto;
-  margin-right: 60px;
-  max-width: 100%;
+  max-width: 700px;
 }
 
 .social-media {
   display: flex;
-  justify-content: start; /* Align items to the left */
-  gap: 15px;
-  margin-top: 20px;
-  width: 30%;
-  margin-left: 0; /* Adjust margin-left if needed */
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .social-media a {
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  width: 80px;
-  height: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   color: inherit;
   transition: transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
   border-radius: 20%;
   background-color: aliceblue;
 }
@@ -74,15 +81,15 @@ body {
 
 .whatDoIDo {
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #ffffff;
-  margin-top: 100px;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  margin-top: 6.25rem;
+  box-sizing: border-box;
 }
 
 .whatDoIDo-text {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 3rem;
 }
 
@@ -90,30 +97,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
-  padding: 30px;
+  margin-bottom: 2.5rem;
+  padding: 1.875rem;
   flex-wrap: wrap;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .DSA-image, .webdev-image, .backend-image {
   flex: 1;
-  padding-right: 20px;
-  margin-left: 100px;
+  padding-right: 1.25rem;
   max-width: 100%;
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .DSA-image img, .webdev-image img, .backend-image img {
-  width: 120%;
+  width: 100%;
   height: auto;
 }
 
 .webdev-image img {
   width: auto;
-  height: 500px;
-  margin-left: 20px;
-  margin-right: 800px;
+  height: 31.25rem;
   max-width: 100%;
 }
 
@@ -122,12 +126,12 @@ body {
 }
 
 .webdev-text, .backend-text {
-  margin-left: 100px;
+  margin-left: 6.25rem;
 }
 
 .DSA-text h2, .webdev-text h2, .backend-text h2 {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .DSA-text ul, .webdev-text ul, .backend-text ul {
@@ -138,30 +142,27 @@ body {
 .DSA-text li, .webdev-text li, .backend-text li {
   font-size: 1.2em;
   line-height: 1.5;
-  margin: 0; /* Remove default margins */
-  letter-spacing: 0.1em; /* Increase space between letters */
+  margin: 0;
+  letter-spacing: 0.1em;
   word-spacing: 0.2em;
 }
 
-/* Media Queries for Responsiveness
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .hello {
-    margin-left: 50px;
+    margin-left: 3.125rem;
   }
 
-  .boyLaptop {
+  .boyLaptop-container {
     width: 100%;
     margin-right: 0;
   }
 
   .DSA-image, .webdev-image {
-    margin-left: 50px;
+    margin-left: 3.125rem;
   }
 
   .webdev-image img {
-    margin-right: 100px;
+    margin-right: 6.25rem;
   }
 }
 
@@ -172,7 +173,7 @@ body {
   }
 
   .hello {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 
   .social-media {
@@ -206,7 +207,7 @@ body {
 
 @media (max-width: 480px) {
   .hello {
-    margin-left: 10px;
+    margin-left: 0.625rem;
   }
 
   .whatDoIDo-text {
