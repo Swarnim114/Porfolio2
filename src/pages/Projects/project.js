@@ -42,15 +42,15 @@ const Projects = () => {
         </div>
 
         <div className='projects-list-item'>
-          <a href="link_to_project_2" >
-            <h3 className='project-list-item-title'>Project 2 title</h3>
-            <p className='small-description'>Description of Project 2</p>
+          <a href="https://github.com/Swarnim114/Quiz_Web" >
+            <h3 className='project-list-item-title'>Quiz web App</h3>
+            <p className='small-description'>A random trivia website will live scores</p>
           </a>
         </div>
         <div className='projects-list-item'>
-          <a href="link_to_project_3" >
-            <h3 className='project-list-item-title'>Project 3 title</h3>
-            <p className='small-description'>Description of Project 3</p>
+          <a href="https://github.com/Swarnim114/Yulu_case_study" >
+            <h3 className='project-list-item-title'>Yulu case Study</h3>
+            <p className='small-description'>A statisstical and analytical study on Yulu</p>
           </a>
         </div>
       </div>
